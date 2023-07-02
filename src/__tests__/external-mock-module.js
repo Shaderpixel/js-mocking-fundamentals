@@ -1,6 +1,8 @@
 const thumbWar = require('../thumb-war')
 const utilsMock = require('../utils')
 
+// when we  exported our mocks method so that other files can use the same mock for utils file
+// see __mocks__/utils.js Jest will automatically pick up the mocked file
 jest.mock('../utils')
 
 test('returns winner', () => {
